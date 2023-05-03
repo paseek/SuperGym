@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Финтес центр SuperGym</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicons/Manifest.webmanifest">
+  <link rel="preload" href="fonts/alumnisans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <nav class="header__nav">
+            <div class="header__nav-wrapper">
+              <div class="header__logo-wrapper">
+                <a href="" class="header__logo">
+                  <svg class="nav__logo-icon" aria-hidden="true" focusable="false" width="122" height="44">
+                    <use href="img/sprite.svg#logo" />
+                  </svg>
+                </a>
+              </div>
+              <div class="header__phone-wrapper">
+                <a href="tel:+78005555555" class="header__phone">8-800-555-55-55</a>
+              </div>
+            </div>
+          </nav>
+          <div class="header__text-wrapper">
+            <div class="header__text">
+              <ul class="header__text-list">
+                <li class="header__text-item">Тренажёрный зал</li>
+                <li class="header__text-item">Групповые занятия</li>
+                <li class="header__text-item">Кардио-зона</li>
+              </ul>
+              <div class="header__text-content">
+                <!-- <div class="header__text-wrapper"> -->
+                <span>Омск</span>
+                <h1>Фитнес центр</h1>
+                <!-- </div> -->
+                <!-- <a href="#" class="header__button">Купить абонемент</a> -->
+              </div>
+            </div>
+            <a href="#" class="header__button">Купить абонемент</a>
+          </div>
+          <div class="header__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/header/header-image-tablet.webp, img/header/header-image-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/header/header-image.webp, img/header/header-image@2x.webp 2x">
+              <source media="(max-width: 1199px)"
+                srcset="img/header/header-image-tablet.jpg, img/header/header-image-tablet@2x.jpg 2x">
+              <img src="img/header/header-image.jpg" srcset="img/header/header-image@2x.jpg 2x" width="500" height="556"
+                alt="Тренер в футболке супермена">
+            </picture>
+          </div>
+          <!-- <a href="#" class="header__button">Купить абонемент</a> -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- <section class="intro">
+        <div class="container">
+          <h1>Тестовая страница.</h1>
+          <p>На данной странице показан пример модальных окон.</p>
+          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+          </p>
+          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
