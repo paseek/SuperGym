@@ -1,0 +1,268 @@
+.about {
+  width: 100%;
+  background-color: $white;
+}
+
+.about__container {
+  min-height: 756px;
+
+  @include vp-1199 {
+    min-height: 854px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: calc(85 / 1160 * 100%);
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1199 {
+    display: block;
+    width: 100%;
+    padding-top: 101px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.about__text {
+  width: calc(355 / 1160 * 100%);
+  margin-top: 39px;
+  margin-left: auto;
+
+  @include vp-1199 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.about__text h2 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: $sapphire;
+  margin: 0;
+  margin-bottom: 6px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-right: 15px;
+    margin-bottom: -2px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-right: 0;
+    margin-bottom: 4px
+  }
+}
+
+.about__text h3 {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $sapphire;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include vp-1199 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+  }
+}
+
+.about__text p {
+  font-family: $ff-roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $sapphire;
+  margin: 0;
+
+  @include vp-1199 {
+    max-width: 502px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+  }
+
+  @include vp-767 {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 33px;
+  }
+}
+
+.about__text-more p {
+  margin-top: 8px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.about__image {
+  width: calc(660 / 1160 * 100%);
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.about__image img {
+  @include vp-1199 {
+    width: 100%;
+    aspect-ratio: 678/345;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 320/313;
+  }
+}
+
+.about__video {
+  width: 364px;
+  height: 228px;
+  position: absolute;
+  top: 408px;
+  left: 50%;
+  transform: translateX(-39%);
+  background-color: $dark-gray;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+    top: auto;
+    bottom: 17px;
+    transform: translateX(-50%);
+  }
+
+  @include vp-767 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 320/167;
+    top: 0;
+    bottom: 0;
+    margin-top: 40px;
+  }
+}
+
+.about__video img {
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.about__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  transform: translate(-50%, -50%);
+  border: 0;
+  border-radius: 50%;
+  background: $video-button-gradient;
+  cursor: pointer;
+
+  @include vp-1199 {
+    top: 50%;
+    width: 52px;
+    height: 52px;
+  }
+
+  @include vp-767 {
+    top: 50%;
+  }
+
+  @include hover-focus {
+    background: $video-button-gradient-reverse;
+    transform: scale(1.1) translate(-44%, -44%);
+    transition: .3s ease;
+  }
+}
+
+.about__video-button::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  right: -14px;
+  bottom: -14px;
+  border-radius: 50%;
+  border: 2px solid rgba($cobalt, 0.2);
+  background: linear-gradient(to right, rgba($torch-red, 0.2), rgba($cobalt, 0.2));
+  mask: linear-gradient($white 0 0) padding-box, linear-gradient($white 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  // background: linear-gradient(80deg, $torch-red 20%, $cobalt 90%);
+  // -webkit-mask: radial-gradient(47px, transparent 98%, $black);
+  // mask: radial-gradient(47px, transparent 98%, $black);
+  // opacity: 0.2;
+
+  @include vp-1199 {
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+  }
+}
+
+.about__video-button::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 53%;
+  width: 13px;
+  height: 15px;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+
+  @include vp-1199 {
+    left: 51%;
+    width: 10px;
+    height: 12px;
+  }
+
+  @include vp-767 {
+    left: 53%;
+  }
+}
+
+.about__video-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.about__video-button:hover::after {
+  background-color: $dark-gray;
+}

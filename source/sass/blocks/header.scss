@@ -138,6 +138,7 @@
 
 .header__text {
   display: flex;
+  justify-content: end;
   padding-top: 87px;
 
   @include vp-1199 {
@@ -283,6 +284,10 @@
   padding-bottom: 52px;
   margin-top: -24px;
   background-color: transparent;
+
+  @media (max-width: 1367px) {
+    margin-top: 0;
+  }
 
   @include vp-1199 {
     margin-top: 19px;
