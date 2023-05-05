@@ -25,9 +25,14 @@
 @import "blocks/custom-select";
 @import "blocks/header";
 @import "blocks/about";
+@import "blocks/subs";
 
-
+// JS - module css
 // ---------------------------------
+
+@import "blocks/data-tabs.scss";
+@import "blocks/tabs.scss";
+
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 

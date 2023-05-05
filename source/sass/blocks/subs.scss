@@ -1,0 +1,324 @@
+.subs {
+  position: relative;
+  background-color: $ghost-white;
+}
+
+.subs__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 101px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+}
+
+.subs__wrapper h1 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  margin-left: -4px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-left: -14px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-left: -10px;
+  }
+}
+
+.subs__list {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 1px;
+  margin-bottom: 39px;
+
+  @include vp-1199 {
+    gap: 23px;
+    margin-top: 3px;
+    margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    gap: 46px;
+    margin-bottom: 34px;
+  }
+}
+
+.subs__list::after {
+  position: absolute;
+  content: "";
+  width: 92%;
+  height: 2px;
+  background-color: $grey-02;
+  bottom: 0;
+
+  // @include vp-1199 {
+  //   width: 76%;
+  // }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.subs__item {
+  position: relative;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $sapphire-05;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 18px;
+    padding-right: 0;
+    padding-bottom: 14px;
+    padding-left: 0;
+  }
+
+  @include hover-focus {
+    color: $sapphire;
+  }
+}
+
+.subs__item.is-active {
+  color: $sapphire;
+}
+
+.subs__item::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 32px);
+  left: 15px;
+  bottom: 0;
+  height: 2px;
+  background-color: $crimson;
+  opacity: 0;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.subs__item.is-active::after {
+  opacity: 1;
+}
+
+.subs__offers-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, calc(360 / 1160 * 100%));
+  gap: calc(40 / 1160 * 100%);
+  justify-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @include vp-1199 {
+    grid-template-columns: calc(442 / 678 * 100%);
+    justify-content: center;
+    gap: 42px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.subs__offer-item {
+  width: 100%;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+  padding-right: 10px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  background-color: $white;
+  border: 7px solid #fff;
+
+  @include hover-focus {
+    border: 7px solid;
+    border-image: $card-border-gradient;
+    border-image-slice: 1;
+  }
+
+  @include vp-767 {
+    padding-top: 44px;
+    padding-right: 34px;
+    padding-bottom: 47px;
+    padding-left: 34px;
+  }
+}
+
+.subs__offer-item h3 {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: $sapphire;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+}
+
+.subs__offer-item p {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $sapphire;
+  margin: 0;
+  margin-bottom: 66px;
+
+  @include vp-767 {
+    margin-bottom: 55px;
+  }
+}
+
+.subs__price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 33px;
+
+  @include vp-767 {
+    gap: 10px;
+    margin-bottom: 29px;
+  }
+}
+
+.subs__price-wrapper span {
+  position: relative;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $egyptian-blue;
+  margin: 0;
+  margin-left: 2px;
+  z-index: 0;
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+    margin-left: 0;
+  }
+}
+
+.subs__price-wrapper span::after {
+  position: absolute;
+  content: attr(data-price);
+  top: 0;
+  left: 0;
+  font-size: 100px;
+  line-height: 100px;
+  color: $whisper;
+  opacity: 0.48;
+  transform: translate(-9%, -29%);
+  z-index: -1;
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+    transform: translate(-11%, -37%);
+  }
+}
+
+.subs__price-wrapper svg {
+  fill: $sapphire;
+  z-index: 1;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.subs__button {
+  width: 208px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $sapphire;
+  background-color: transparent;
+  border: 2px solid $sapphire;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  cursor: pointer;
+
+  @include hover-focus {
+    background: $button-gradient;
+    color: $white;
+    border: none;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+.subs__background-image {
+  position: absolute;
+  right: 0;
+  bottom: -18%;
+
+  @include vp-1199 {
+    bottom: -7%;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.subs__background-image img {
+  width: 100%;
+  height: 100%;
+}

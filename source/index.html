@@ -114,113 +114,143 @@
             </div>
           </div>
         </div>
-  </div>
-  </section>
-  <section class="subs">
-    <div class="container">
-      <div class="subs__wrapper">
-        <h1>Абонементы</h1>
-        <ul class="subs__list">
-          <li class="subs__item"><a href="" class="subs__link">1 месяц</a></li>
-          <li class="subs__item"><a href="" class="subs__link">6 месяцев</a></li>
-          <li class="subs__item"><a href="" class="subs__link">12 месяцев</a></li>
-        </ul>
-        <!-- первый список -->
-        <ul class="subs__offers-list">
-          <li class="subs__offer-item">
-            <h3>С тренером</h3>
-            <p>12 занятий</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">5000</span>
+      </section>
+      <section class="subs">
+        <div class="container">
+          <div class="subs__wrapper">
+            <h1>Абонементы</h1>
+            <div class="sub__list-wrapper" data-tabs="parent" data-delay="150">
+              <div class="subs__list" data-tabs="controls">
+                <button class="subs__item" data-tabs="control" data-index="0" type="button">1 месяц</button>
+                <button class="subs__item" data-tabs="control" data-index="1" type="button">6 месяцев</button>
+                <button class="subs__item" data-tabs="control" data-index="2" type="button">12 месяцев</button>
+              </div>
+              <!-- первый список -->
+              <div class="sub__offers-wrapper" data-tabs="content">
+                <ul class="subs__offers-list" data-tabs="element">
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="5000">5000</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="1700">1700</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="2700">2700</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                </ul>
+                <!-- второй список -->
+                <ul class="subs__offers-list" data-tabs="element">
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>С тренером</h3>
+                    <p>72 занятий</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="30000">30000</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="10200">10200</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="16200">16200</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                </ul>
+                <!-- третий список -->
+                <ul class="subs__offers-list" data-tabs="element">
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>С тренером</h3>
+                    <p>144 занятий</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="60000">60000</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="20400">20400</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                  <li class="subs__offer-item" tabindex="0">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <div class="subs__price-wrapper">
+                      <span class="subs__price" data-price="32400">32400</span>
+                      <svg class="sub__icon" aria-hidden="true" focusable="false" width="33" height="42">
+                        <use href="./img/sprite.svg#rub" />
+                      </svg>
+                    </div>
+                    <button class="subs__button" type="button">Купить абонемент</button>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-          <li class="subs__offer-item">
-            <h3>Дневной</h3>
-            <p>с 8:00 до 17:00</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">1700</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-          <li class="subs__offer-item">
-            <h3>Полный день</h3>
-            <p>с 8:00 до 22:00</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">2700</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-        </ul>
-        <!-- второй список -->
-        <ul class="subs__offers-list">
-          <li class="subs__offer-item">
-            <h3>С тренером</h3>
-            <p>72 занятий</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">30000</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-          <li class="subs__offer-item">
-            <h3>Дневной</h3>
-            <p>с 8:00 до 17:00</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">10200</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-          <li class="subs__offer-item">
-            <h3>Полный день</h3>
-            <p>с 8:00 до 22:00</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">16200</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-        </ul>
-        <!-- третий список -->
-        <ul class="subs__offers-list">
-          <li class="subs__offer-item">
-            <h3>С тренером</h3>
-            <p>144 занятий</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">60000</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-          <li class="subs__offer-item">
-            <h3>Дневной</h3>
-            <p>с 8:00 до 17:00</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">20400</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-          <li class="subs__offer-item">
-            <h3>Полный день</h3>
-            <p>с 8:00 до 22:00</p>
-            <div class="subs__price-wrapper">
-              <span class="subs__price">32400</span>
-            </div>
-            <button class="subs__button" type="button">Купить абонемент</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="subs__background-image">
-      <picture>
-        <source type="image/webp" media="(max-width: 1199px)"
-          srcset="./img/subs/subs-image-tablet.webp 1x, ./img/subs/subs-image-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="./img/subs/subs-image.webp 1x, ./img/subs/subs-image@2x.webp 2x">
-        <source media="(max-width: 1199px)"
-          srcset="./img/subs/subs-image-tablet.png 1x, ./img/subs/subs-image-tablet@2x.png 2x">
-        <img src="./img/subs/subs-image.png" srcset="./img/subs/subs-image@2x.png 2x" width="287" height="494"
-          alt="Красные блины для гантелей">
-      </picture>
-    </div>
-  </section>
-  <!-- <section class="intro">
+
+          </div>
+          <div class="subs__background-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/subs/subs-image-tablet.webp 1x, ./img/subs/subs-image-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/subs/subs-image.webp 1x, ./img/subs/subs-image@2x.webp 2x">
+              <source media="(max-width: 1199px)"
+                srcset="./img/subs/subs-image-tablet.png 1x, ./img/subs/subs-image-tablet@2x.png 2x">
+              <img src="./img/subs/subs-image.png" srcset="./img/subs/subs-image@2x.png 2x" width="287" height="494"
+                alt="Красные блины для гантелей">
+            </picture>
+          </div>
+      </section>
+      <!-- <section class="intro">
         <div class="container">
           <h1>Тестовая страница.</h1>
           <p>На данной странице показан пример модальных окон.</p>
@@ -230,10 +260,10 @@
           <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
         </div>
       </section> -->
-  </main>
-  <footer>
-    <div class="container"></div>
-  </footer>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
   </div>
 
   <!-- Модалки -->
