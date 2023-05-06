@@ -18,7 +18,7 @@
   }
 }
 
-.subs__wrapper h1 {
+.subs__wrapper h2 {
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 54px;
@@ -132,6 +132,7 @@
 
   @include vp-767 {
     width: 100%;
+    left: 0px;
   }
 }
 
