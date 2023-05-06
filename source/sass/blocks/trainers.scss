@@ -1,3 +1,59 @@
+.trainers {
+  padding-bottom: 140px;
+}
+
 .trainers__wrapper {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 103px;
+}
+
+.trainers__list {
   display: flex;
+  padding: 0;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trainers__image {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.trainers__item {
+  display: grid;
+  max-width: 260px;
+  max-height: 294px;
+
+  @include hover-focus {
+    .trainers__about {
+      display: block;
+    }
+
+    .trainers__info {
+      background-color: $sapphire-089;
+    }
+  }
+
+}
+
+.trainers__info {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  color: $white;
+  display: grid;
+  padding: 23px;
+}
+
+.trainers__info h3 {
+  justify-self: center;
+  align-self: end;
+  margin: 0;
+}
+
+.trainers__about {
+  display: none;
 }

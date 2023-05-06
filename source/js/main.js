@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initVideo} from './modules/video/video';
 import {initTabs} from './modules/tabs/init-tabs';
-import {initTrainersSwiper} from './modules/slider/slider';
+import {initTrainersSlider} from './modules/slider/slider';
 
 // ---------------------------------
 
@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   initTabs();
   initVideo();
-  initTrainersSwiper();
+  initTrainersSlider();
 
   // Modules
   // ---------------------------------

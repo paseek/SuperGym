@@ -145,7 +145,7 @@
   display: grid;
   grid-template-columns: repeat(3, calc(360 / 1160 * 100%));
   gap: calc(40 / 1160 * 100%);
-  justify-items: center;
+  // justify-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
