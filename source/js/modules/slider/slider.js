@@ -1,10 +1,11 @@
+import Swiper from '../../vendor/swiper';
 const trainersSwiper = document.querySelector('.trainers__swiper');
 
 const initTrainersSlider = () => {
   if (trainersSwiper) {
     (() =>
       new Swiper('.trainers__swiper', {
-        direction: 'horisontal',
+        direction: 'horizontal',
         loop: true,
 
         navigation: {
