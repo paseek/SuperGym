@@ -2591,6 +2591,12 @@ button,
   }
 }
 
+.trainers__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 [data-tabs=parent] {
   overflow: hidden;
 }
