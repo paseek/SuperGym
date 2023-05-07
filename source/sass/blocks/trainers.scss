@@ -89,6 +89,21 @@
   }
 }
 
+.trainers__item {
+  display: grid;
+  max-width: 260px;
+  max-height: none;
+  height: auto;
+  aspect-ratio: 1/1;
+
+  @include vp-1199 {
+    max-width: 268px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}
 
 .trainers__item:hover .trainers__about,
 .trainers__item:focus .trainers__about,
@@ -133,23 +148,6 @@
   }
 }
 
-.trainers__item {
-  display: grid;
-  max-width: 260px;
-  max-height: none;
-  height: auto;
-  aspect-ratio: 1/1;
-
-  @include vp-1199 {
-    max-width: 268px;
-  }
-
-  @include vp-767 {
-    max-width: 100%;
-  }
-
-}
-
 .trainers__info {
   // max-height: 294px;
   grid-column: 1 / -1;
@@ -157,6 +155,7 @@
   color: $white;
   display: grid;
   overflow-y: scroll;
+  scrollbar-width: none;
   padding-top: 9px;
   padding-right: 30px;
   padding-bottom: 24px;
