@@ -1,4 +1,4 @@
-import Swiper from '../../vendor/swiper';
+// import Swiper from '../../vendor/swiper';
 const trainersSwiper = document.querySelector('.trainers__swiper');
 
 const initTrainersSlider = () => {
@@ -9,15 +9,15 @@ const initTrainersSlider = () => {
         loop: true,
 
         navigation: {
-          nextEl: '.trainers__button--prev',
-          prevEl: '.trainers__button--next',
+          nextEl: '.trainers__button--next',
+          prevEl: '.trainers__button--prev',
         },
 
         breakpoints: {
           // when window width is >= 320px
           320: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            // spaceBetween: 20,
           },
           // when window width is >= 768px
           768: {

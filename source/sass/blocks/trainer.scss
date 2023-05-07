@@ -13,9 +13,9 @@
 
 .trainers__slider {
 
-  @include vp-1199 {
-    max-width: 566px;
-  }
+  // @include vp-1199 {
+  //   max-width: 566px;
+  // }
 
   // @include vp-767 {
   //   max-width: 226px;
@@ -73,11 +73,28 @@
 .trainers__image {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
 }
 
 .trainers__image img {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  // object-fit: cover;
+  // aspect-ratio: 260/294;
+
+  @include vp-1199 {
+    // aspect-ratio: 268/294;
+  }
+
+  @include vp-767 {
+    // aspect-ratio: 226/274;
+  }
+}
+
+.trainers__item {
+  display: grid;
+  width: 22.4137931034%;
   aspect-ratio: 260/294;
 
   @include vp-1199 {
@@ -86,23 +103,6 @@
 
   @include vp-767 {
     aspect-ratio: 226/274;
-  }
-}
-
-.trainers__item {
-  display: grid;
-  max-width: 260px;
-  // height: 294px;
-  max-height: none;
-  height: auto;
-  aspect-ratio: 1/1;
-
-  @include vp-1199 {
-    max-width: 268px;
-  }
-
-  @include vp-767 {
-    max-width: 100%;
   }
 
   @include hover-focus {
