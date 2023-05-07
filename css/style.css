@@ -2938,6 +2938,23 @@ button,
   aspect-ratio: 260/294;
 }
 
+.trainers__item:hover .trainers__about,
+.trainers__item:focus .trainers__about,
+.trainers__item:active .trainers__about {
+  display: block;
+  margin-top: -4px;
+}
+
+.trainers__item:hover .trainers__info,
+.trainers__item:focus .trainers__info,
+.trainers__item:active .trainers__info {
+  background-color: rgba(16, 38, 84, 0.89);
+  padding-top: 9px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
 .trainers__item {
   display: -ms-grid;
   display: grid;
@@ -2945,19 +2962,6 @@ button,
   max-height: none;
   height: auto;
   aspect-ratio: 1/1;
-}
-
-.trainers__item.focus-visible:focus .trainers__about {
-  display: block;
-  margin-top: -4px;
-}
-
-.trainers__item.focus-visible:focus .trainers__info {
-  background-color: rgba(16, 38, 84, 0.89);
-  padding-top: 9px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
 }
 
 .trainers__info {
@@ -2973,6 +2977,10 @@ button,
   padding-right: 30px;
   padding-bottom: 24px;
   padding-left: 30px;
+}
+
+.trainers__info::-webkit-scrollbar {
+  width: 0;
 }
 
 .trainers__info h3 {
@@ -3435,20 +3443,24 @@ button,
     aspect-ratio: 268/294;
   }
 
-  .trainers__item {
-    max-width: 268px;
-  }
-
-  .trainers__item.focus-visible:focus .trainers__info {
+  .trainers__item:hover .trainers__info,
+  .trainers__item:focus .trainers__info,
+  .trainers__item:active .trainers__info {
     padding-top: 15px;
     padding-right: 28px;
     padding-bottom: 16px;
     padding-left: 28px;
   }
 
-  .trainers__item.focus-visible:focus .trainers__info h3 {
+  .trainers__item:hover .trainers__info h3,
+  .trainers__item:focus .trainers__info h3,
+  .trainers__item:active .trainers__info h3 {
     margin-bottom: 0;
     margin-left: -9px;
+  }
+
+  .trainers__item {
+    max-width: 268px;
   }
 
   .trainers__info h3 {
@@ -3470,20 +3482,6 @@ button,
 
   .trainers__button--next {
     margin-right: 28px;
-  }
-}
-
-@media (hover: hover) and (max-width: 1199px) {
-  .trainers__item:hover:not(.focus-visible) .trainers__info {
-    padding-top: 15px;
-    padding-right: 28px;
-    padding-bottom: 16px;
-    padding-left: 28px;
-  }
-
-  .trainers__item:hover:not(.focus-visible) .trainers__info h3 {
-    margin-bottom: 0;
-    margin-left: -9px;
   }
 }
 
@@ -3751,19 +3749,23 @@ button,
     aspect-ratio: 226/274;
   }
 
-  .trainers__item {
-    max-width: 100%;
-  }
-
-  .trainers__item.focus-visible:focus .trainers__info {
+  .trainers__item:hover .trainers__info,
+  .trainers__item:focus .trainers__info,
+  .trainers__item:active .trainers__info {
     padding-top: 15px;
     padding-right: 20px;
     padding-bottom: 16px;
     padding-left: 20px;
   }
 
-  .trainers__item.focus-visible:focus .trainers__info h3 {
+  .trainers__item:hover .trainers__info h3,
+  .trainers__item:focus .trainers__info h3,
+  .trainers__item:active .trainers__info h3 {
     margin-left: 0;
+  }
+
+  .trainers__item {
+    max-width: 100%;
   }
 
   .trainers__info {
@@ -3856,19 +3858,6 @@ button,
   }
 }
 
-@media (hover: hover) and (max-width: 767px) {
-  .trainers__item:hover:not(.focus-visible) .trainers__info {
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-  }
-
-  .trainers__item:hover:not(.focus-visible) .trainers__info h3 {
-    margin-left: 0;
-  }
-}
-
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -3927,18 +3916,5 @@ button,
     border: none;
     padding-top: 26px;
     padding-bottom: 26px;
-  }
-
-  .trainers__item:hover:not(.focus-visible) .trainers__about {
-    display: block;
-    margin-top: -4px;
-  }
-
-  .trainers__item:hover:not(.focus-visible) .trainers__info {
-    background-color: rgba(16, 38, 84, 0.89);
-    padding-top: 9px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
   }
 }
