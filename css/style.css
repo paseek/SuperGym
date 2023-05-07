@@ -2938,6 +2938,15 @@ button,
   aspect-ratio: 260/294;
 }
 
+.trainers__item {
+  display: -ms-grid;
+  display: grid;
+  max-width: 260px;
+  max-height: none;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
 .trainers__item:hover .trainers__about,
 .trainers__item:focus .trainers__about,
 .trainers__item:active .trainers__about {
@@ -2955,15 +2964,6 @@ button,
   padding-left: 30px;
 }
 
-.trainers__item {
-  display: -ms-grid;
-  display: grid;
-  max-width: 260px;
-  max-height: none;
-  height: auto;
-  aspect-ratio: 1/1;
-}
-
 .trainers__info {
   grid-column: 1/-1;
   -ms-grid-row: 1;
@@ -2973,6 +2973,7 @@ button,
   display: -ms-grid;
   display: grid;
   overflow-y: scroll;
+  scrollbar-width: none;
   padding-top: 9px;
   padding-right: 30px;
   padding-bottom: 24px;
@@ -3443,6 +3444,10 @@ button,
     aspect-ratio: 268/294;
   }
 
+  .trainers__item {
+    max-width: 268px;
+  }
+
   .trainers__item:hover .trainers__info,
   .trainers__item:focus .trainers__info,
   .trainers__item:active .trainers__info {
@@ -3457,10 +3462,6 @@ button,
   .trainers__item:active .trainers__info h3 {
     margin-bottom: 0;
     margin-left: -9px;
-  }
-
-  .trainers__item {
-    max-width: 268px;
   }
 
   .trainers__info h3 {
@@ -3749,6 +3750,10 @@ button,
     aspect-ratio: 226/274;
   }
 
+  .trainers__item {
+    max-width: 100%;
+  }
+
   .trainers__item:hover .trainers__info,
   .trainers__item:focus .trainers__info,
   .trainers__item:active .trainers__info {
@@ -3762,10 +3767,6 @@ button,
   .trainers__item:focus .trainers__info h3,
   .trainers__item:active .trainers__info h3 {
     margin-left: 0;
-  }
-
-  .trainers__item {
-    max-width: 100%;
   }
 
   .trainers__info {
