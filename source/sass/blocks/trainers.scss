@@ -89,10 +89,53 @@
   }
 }
 
+
+.trainers__item:hover .trainers__about,
+.trainers__item:focus .trainers__about,
+.trainers__item:active .trainers__about {
+  display: block;
+  margin-top: -4px;
+}
+
+
+.trainers__item:hover .trainers__info,
+.trainers__item:focus .trainers__info,
+.trainers__item:active .trainers__info {
+  background-color: $sapphire-089;
+  padding-top: 9px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  @include vp-1199 {
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+
+    h3 {
+      margin-bottom: 0;
+      margin-left: -9px;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+    // padding-right: 9px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    // padding-left: 9px;
+    padding-left: 20px;
+
+    h3 {
+      margin-left: 0;
+    }
+  }
+}
+
 .trainers__item {
   display: grid;
   max-width: 260px;
-  // height: 294px;
   max-height: none;
   height: auto;
   aspect-ratio: 1/1;
@@ -105,45 +148,6 @@
     max-width: 100%;
   }
 
-  @include hover-focus {
-    .trainers__about {
-      display: block;
-      margin-top: -4px;
-    }
-
-    .trainers__info {
-      background-color: $sapphire-089;
-      padding-top: 9px;
-      padding-right: 30px;
-      padding-bottom: 10px;
-      padding-left: 30px;
-
-      @include vp-1199 {
-        padding-top: 15px;
-        padding-right: 28px;
-        padding-bottom: 16px;
-        padding-left: 28px;
-
-        h3 {
-          margin-bottom: 0;
-          margin-left: -9px;
-        }
-      }
-
-      @include vp-767 {
-        padding-top: 15px;
-        // padding-right: 9px;
-        padding-right: 20px;
-        padding-bottom: 16px;
-        // padding-left: 9px;
-        padding-left: 20px;
-
-        h3 {
-          margin-left: 0;
-        }
-      }
-    }
-  }
 }
 
 .trainers__info {
@@ -164,6 +168,11 @@
     aspect-ratio: 1/1.21;
   }
 }
+
+.trainers__info::-webkit-scrollbar {
+  width: 0;
+}
+
 
 .trainers__info h3 {
   font-weight: 700;

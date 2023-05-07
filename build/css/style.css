@@ -3544,6 +3544,54 @@ button,
   }
 }
 
+.trainers__item:hover .trainers__about,
+.trainers__item:focus .trainers__about,
+.trainers__item:active .trainers__about {
+  display: block;
+  margin-top: -4px;
+}
+
+.trainers__item:hover .trainers__info,
+.trainers__item:focus .trainers__info,
+.trainers__item:active .trainers__info {
+  background-color: rgba(16, 38, 84, 0.89);
+  padding-top: 9px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+@media (max-width: 1199px) {
+  .trainers__item:hover .trainers__info,
+.trainers__item:focus .trainers__info,
+.trainers__item:active .trainers__info {
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+  }
+  .trainers__item:hover .trainers__info h3,
+.trainers__item:focus .trainers__info h3,
+.trainers__item:active .trainers__info h3 {
+    margin-bottom: 0;
+    margin-left: -9px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers__item:hover .trainers__info,
+.trainers__item:focus .trainers__info,
+.trainers__item:active .trainers__info {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+  }
+  .trainers__item:hover .trainers__info h3,
+.trainers__item:focus .trainers__info h3,
+.trainers__item:active .trainers__info h3 {
+    margin-left: 0;
+  }
+}
+
 .trainers__item {
   display: -ms-grid;
   display: grid;
@@ -3560,76 +3608,6 @@ button,
 @media (max-width: 767px) {
   .trainers__item {
     max-width: 100%;
-  }
-}
-@media (hover: hover) {
-  .trainers__item:hover:not(.focus-visible) .trainers__about {
-    display: block;
-    margin-top: -4px;
-  }
-  .trainers__item:hover:not(.focus-visible) .trainers__info {
-    background-color: rgba(16, 38, 84, 0.89);
-    padding-top: 9px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-  }
-}
-@media (hover: hover) and (max-width: 1199px) {
-  .trainers__item:hover:not(.focus-visible) .trainers__info {
-    padding-top: 15px;
-    padding-right: 28px;
-    padding-bottom: 16px;
-    padding-left: 28px;
-  }
-  .trainers__item:hover:not(.focus-visible) .trainers__info h3 {
-    margin-bottom: 0;
-    margin-left: -9px;
-  }
-}
-@media (hover: hover) and (max-width: 767px) {
-  .trainers__item:hover:not(.focus-visible) .trainers__info {
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-  }
-  .trainers__item:hover:not(.focus-visible) .trainers__info h3 {
-    margin-left: 0;
-  }
-}
-.trainers__item.focus-visible:focus .trainers__about {
-  display: block;
-  margin-top: -4px;
-}
-.trainers__item.focus-visible:focus .trainers__info {
-  background-color: rgba(16, 38, 84, 0.89);
-  padding-top: 9px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-}
-@media (max-width: 1199px) {
-  .trainers__item.focus-visible:focus .trainers__info {
-    padding-top: 15px;
-    padding-right: 28px;
-    padding-bottom: 16px;
-    padding-left: 28px;
-  }
-  .trainers__item.focus-visible:focus .trainers__info h3 {
-    margin-bottom: 0;
-    margin-left: -9px;
-  }
-}
-@media (max-width: 767px) {
-  .trainers__item.focus-visible:focus .trainers__info {
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-  }
-  .trainers__item.focus-visible:focus .trainers__info h3 {
-    margin-left: 0;
   }
 }
 
@@ -3653,6 +3631,10 @@ button,
     height: auto;
     aspect-ratio: 1/1.21;
   }
+}
+
+.trainers__info::-webkit-scrollbar {
+  width: 0;
 }
 
 .trainers__info h3 {
