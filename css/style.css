@@ -3426,6 +3426,9 @@ button,
 }
 
 .review__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   width: 57.9310344828%;
   margin: 0 auto;
