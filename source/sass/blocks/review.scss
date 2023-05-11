@@ -76,6 +76,7 @@
 }
 
 .review__wrapper {
+  display: flex;
   position: relative;
   // max-width: 684px;
   width: calc(672 / 1160 * 100%);
