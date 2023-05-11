@@ -198,6 +198,12 @@
     padding-left: 8px;
     align-self: end;
   }
+
+  @include hover-focus {
+    color: $sapphire;
+    background-color: $white;
+    border-color: $white;
+  }
 }
 
 .promo__imgage {
