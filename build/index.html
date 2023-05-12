@@ -640,6 +640,45 @@
           </div>
         </div>
       </section>
+      <div class="site__wrapper">
+        <section class="form" data-form-validate>
+          <div class="form__wrapper">
+            <h2>Бесплатное занятие</h2>
+            <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+              <label for=" name" data-required data-validate-type="text" data-message-base="Введите свое имя">
+                <input id="name" type="text" name="name" placeholder="Имя" required>
+              </label>
+              <label for="phone" data-required data-validate-type="phone" data-message-base="Введите свой телефон">
+                <input id="phone" type="tel" name="Phone" placeholder="Телефон" required pattern="[0-9]{11}"">
+              </label>
+              <button class=" form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <h2>Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3>Адрес:</h3>
+                <address>г. Омск, ул. 60 лет Октября, 7</address>
+              </li>
+              <li class="contacts__item contacts__item-phone">
+                <h3>Телефон:</h3>
+                <a href="tel:+78005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contacts__item contacts__item-time">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__item">
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <!-- <section class="intro">
         <div class="container">
           <h1>Тестовая страница.</h1>

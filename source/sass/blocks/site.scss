@@ -1,0 +1,10 @@
+.site__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 400px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+
+}
