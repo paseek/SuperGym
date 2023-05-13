@@ -2706,7 +2706,7 @@ button,
   -ms-transform: translate(-9%, -29%);
   transform: translate(-9%, -29%);
   z-index: -1;
-  word-break: inherit;
+  word-break: normal;
 }
 
 .subs__price-wrapper svg {
@@ -3150,7 +3150,6 @@ button,
   color: transparent;
   margin: 0;
   line-height: 1;
-  word-break: break-word;
 }
 
 .advantages__item-title span {
