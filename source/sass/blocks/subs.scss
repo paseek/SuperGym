@@ -265,7 +265,7 @@
   opacity: 0.48;
   transform: translate(-9%, -29%);
   z-index: -1;
-  word-break: inherit;
+  word-break: normal;
 
   @include vp-767 {
     font-size: 80px;
