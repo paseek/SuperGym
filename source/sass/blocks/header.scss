@@ -74,7 +74,7 @@
   display: flex;
 }
 
-.nav__logo-icon {
+.header__logo-icon {
   fill: $white;
   width: 122px;
   height: 44px;
@@ -140,9 +140,11 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 87px;
+  margin-right: 4px;
 
   @include vp-1199 {
     padding-top: 68px;
+    margin-right: 0;
   }
 }
 
