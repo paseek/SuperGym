@@ -17,10 +17,6 @@
   @include vp-1199 {
     max-width: 566px;
   }
-
-  // @include vp-767 {
-  //   max-width: 226px;
-  // }
 }
 
 .trainers h2 {
@@ -136,10 +132,8 @@
 
   @include vp-767 {
     padding-top: 15px;
-    // padding-right: 9px;
     padding-right: 20px;
     padding-bottom: 16px;
-    // padding-left: 9px;
     padding-left: 20px;
 
     h3 {
@@ -162,8 +156,9 @@
   padding-left: 30px;
 
   @include vp-767 {
-    max-height: none;
-    height: auto;
+    // max-height: none;
+    // height: auto;
+    height: 100%;
     aspect-ratio: 1/1.21;
   }
 }
