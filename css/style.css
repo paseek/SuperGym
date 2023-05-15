@@ -4644,8 +4644,7 @@ button,
   }
 
   .trainers__info {
-    max-height: none;
-    height: auto;
+    height: 100%;
     aspect-ratio: 1/1.21;
   }
 
