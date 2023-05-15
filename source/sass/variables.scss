@@ -37,12 +37,12 @@ $color-torch-red: #ff1553;
 
 // Gradient
 
-$header-desktop-gradient: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$header-tablet-gradient: conic-gradient(from 155.49deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$header-mobile-gradient: conic-gradient(from 167.26deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$video-button-gradient: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
-$video-button-gradient-reverse: linear-gradient(44.89deg, #B80027 25.38%, #003D85 74.89%);
-$button-gradient: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+$header-desktop-gradient: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$header-tablet-gradient: conic-gradient(from 155.49deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$header-mobile-gradient: conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$video-button-gradient: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$video-button-gradient-reverse: linear-gradient(44.89deg, #b80027 25.38%, #003d85 74.89%);
+$button-gradient: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $button-border-gradient: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
 $card-border-gradient: linear-gradient(to right bottom, #d10a42 0%, #00359f 100%);
 $text-gradient: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);

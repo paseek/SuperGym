@@ -130,7 +130,6 @@
 }
 
 .header__text-wrapper {
-
   @include vp-767 {
     margin: 0 auto;
   }
@@ -279,7 +278,6 @@
     background-color: $white;
     border: 4px solid $sapphire;
   }
-
 }
 
 .header__image {

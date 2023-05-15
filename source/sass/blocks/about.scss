@@ -76,7 +76,7 @@
     font-size: 32px;
     line-height: 38px;
     margin-right: 0;
-    margin-bottom: 4px
+    margin-bottom: 4px;
   }
 }
 
@@ -205,7 +205,7 @@
   @include hover-focus {
     background: $video-button-gradient-reverse;
     transform: scale(1.1) translate(-44%, -44%);
-    transition: .3s ease;
+    transition: 0.3s ease;
   }
 }
 
@@ -222,10 +222,6 @@
   mask: linear-gradient($white 0 0) padding-box, linear-gradient($white 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
-  // background: linear-gradient(80deg, $torch-red 20%, $cobalt 90%);
-  // -webkit-mask: radial-gradient(47px, transparent 98%, $black);
-  // mask: radial-gradient(47px, transparent 98%, $black);
-  // opacity: 0.2;
 
   @include vp-1199 {
     top: -10px;
