@@ -1367,6 +1367,19 @@ button,
           flex-grow: 1;
 }
 
+.bottom-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1199px) {
+  .bottom-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
 .rouble {
   /* stylelint-disable */
   text-transform: lowercase !important;
@@ -4535,7 +4548,7 @@ button,
 
 .contacts__wrapper {
   padding-top: 56px;
-  padding-right: 170px;
+  padding-right: 0;
   padding-bottom: 50px;
   padding-left: 120px;
   -ms-grid-column-align: start;
@@ -4547,9 +4560,9 @@ button,
     padding-top: 62px;
     padding-bottom: 63px;
     margin: 0 auto;
-    -webkit-transform: translateX(15px);
-        -ms-transform: translateX(15px);
-            transform: translateX(15px);
+    -webkit-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
 }
 @media (max-width: 767px) {
@@ -4591,7 +4604,7 @@ button,
 }
 
 .contacts__list {
-  width: 404px;
+  max-width: 404px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -4635,7 +4648,7 @@ button,
   .contacts__list::after {
     height: 90%;
     top: 8px;
-    left: 50%;
+    left: 66%;
   }
 }
 @media (max-width: 767px) {
@@ -4725,7 +4738,6 @@ button,
   padding-top: 56px;
   padding-right: 170px;
   padding-bottom: 69px;
-  padding-left: 103px;
   -ms-grid-column-align: end;
       justify-self: end;
 }
@@ -4819,6 +4831,14 @@ button,
   padding-right: 0;
   padding-bottom: 6px;
   padding-left: 0;
+  -webkit-transition: padding-left 0.2s linear;
+  -o-transition: padding-left 0.2s linear;
+  transition: padding-left 0.2s linear;
+}
+
+.form input:focus,
+.form input:active {
+  padding-left: 6px;
 }
 
 .form input::-webkit-input-placeholder {
@@ -4914,19 +4934,6 @@ button,
   left: 0;
   font-size: 12px;
   color: #d10a42;
-}
-
-.site__wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-@media (max-width: 1199px) {
-  .site__wrapper {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
 }
 
 .footer {
@@ -5138,9 +5145,7 @@ button,
   z-index: 1;
   visibility: visible;
   opacity: 1;
-}
-
-/* @mixin hover-focus {
+} /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
