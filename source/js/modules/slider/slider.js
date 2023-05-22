@@ -45,16 +45,16 @@ const initTrainersSlider = () => {
             });
           },
 
-          slideChange() {
-            trainersSwiper.querySelectorAll('.swiper-slide').forEach((item) => {
-              item.setAttribute('tabindex', '-1');
-            });
+          // slideChange() {
+          //   trainersSwiper.querySelectorAll('.swiper-slide').forEach((item) => {
+          //     item.setAttribute('tabindex', '-1');
+          //   });
 
-            let activeSlides = trainersSwiper.querySelectorAll('.swiper-slide-visible');
-            activeSlides.forEach((item) => {
-              item.setAttribute('tabindex', '0');
-            });
-          },
+          //   let activeSlides = trainersSwiper.querySelectorAll('.swiper-slide-visible');
+          //   activeSlides.forEach((item) => {
+          //     item.setAttribute('tabindex', '0');
+          //   });
+          // },
         },
 
       })
