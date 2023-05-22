@@ -2332,8 +2332,9 @@ button,
 }
 
 .about__video {
-  width: 364px;
-  height: 228px;
+  width: 31.3793103448%;
+  height: auto;
+  aspect-ratio: 364/228;
   position: absolute;
   top: 408px;
   left: 50%;
@@ -2509,7 +2510,7 @@ button,
   display: grid;
   -ms-grid-columns: (31.0344827586%)[3];
   grid-template-columns: repeat(3, 31.0344827586%);
-  gap: 3.4482758621%;
+  gap: 40px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -2637,12 +2638,20 @@ button,
 .subs__background-image {
   position: absolute;
   right: 0;
-  bottom: -18%;
+  bottom: -150px;
 }
 
 .subs__background-image img {
   width: 100%;
   height: 100%;
+}
+
+.promo__container {
+  max-width: 1250px;
+  padding-top: 0px;
+  padding-right: 45px;
+  padding-bottom: 0px;
+  padding-left: 45px;
 }
 
 .promo__wrapper {
@@ -2845,10 +2854,12 @@ button,
 .trainers__item {
   display: -ms-grid;
   display: grid;
-  max-width: 260px;
-  max-height: none;
-  height: auto;
-  aspect-ratio: 1/1;
+  width: 22.4137931034%;
+  aspect-ratio: 260/294;
+}
+
+.trainers__item.focus-visible:focus {
+  border: 1px solid red;
 }
 
 .trainers__item:hover .trainers__about,
@@ -3127,6 +3138,14 @@ button,
   padding-bottom: 60px;
 }
 
+.sale__container {
+  max-width: 1250px;
+  padding-top: 0px;
+  padding-right: 45px;
+  padding-bottom: 0px;
+  padding-left: 45px;
+}
+
 .sale h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
@@ -3228,6 +3247,12 @@ button,
   background-color: #3f67d9;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+
+.sale__big-image img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .sale__small {
@@ -3464,6 +3489,10 @@ button,
   margin-top: 3px;
 }
 
+.contacts__item a {
+  display: block;
+}
+
 .contacts__item a.focus-visible:focus {
   border-bottom: 1px solid #102654;
 }
@@ -3641,12 +3670,16 @@ button,
 }
 
 .footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (-webkit-max-content)[5];
+  -ms-grid-columns: (max-content)[5];
+  grid-template-columns: repeat(5, -webkit-max-content);
+  grid-template-columns: repeat(5, max-content);
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 11px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -3666,6 +3699,7 @@ button,
 }
 
 .footer__social-list {
+  max-width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3921,8 +3955,9 @@ button,
   }
 
   .about__video {
-    width: 266px;
-    height: 167px;
+    width: 39.2330383481%;
+    height: auto;
+    aspect-ratio: 266/167;
     top: auto;
     bottom: 17px;
     -webkit-transform: translateX(-50%);
@@ -3981,7 +4016,7 @@ button,
   }
 
   .subs__background-image {
-    bottom: -7%;
+    bottom: -124px;
   }
 
   .promo__wrapper {
@@ -4059,11 +4094,11 @@ button,
 
   .trainers {
     padding-top: 48px;
-    padding-bottom: 100px;
+    padding-bottom: 101px;
   }
 
   .trainers__slider {
-    max-width: 566px;
+    max-width: 83%;
   }
 
   .trainers h2 {
@@ -4083,7 +4118,7 @@ button,
   }
 
   .trainers__item {
-    max-width: 268px;
+    aspect-ratio: 268/294;
   }
 
   .trainers__item:hover .trainers__info,
@@ -4582,6 +4617,11 @@ button,
     display: none;
   }
 
+  .promo__container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .promo__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -4617,6 +4657,10 @@ button,
     padding-bottom: 70px;
   }
 
+  .trainers__slider {
+    max-width: 100%;
+  }
+
   .trainers h2 {
     font-size: 32px;
     line-height: 38px;
@@ -4632,7 +4676,7 @@ button,
   }
 
   .trainers__item {
-    max-width: 100%;
+    aspect-ratio: 226/274;
   }
 
   .trainers__item:hover .trainers__info,
@@ -4753,6 +4797,11 @@ button,
 
   .sale {
     padding-top: 64px;
+  }
+
+  .sale__container {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .sale h2 {
