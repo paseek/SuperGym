@@ -143,6 +143,8 @@
 }
 
 .contacts__item a {
+  display: block;
+
   @include hover-focus {
     border-bottom: 1px solid $sapphire;
   }

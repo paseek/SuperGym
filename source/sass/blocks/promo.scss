@@ -1,3 +1,16 @@
+.promo__container {
+  max-width: 1250px;
+  padding-top: 0px;
+  padding-right: 45px;
+  padding-bottom: 0px;
+  padding-left: 45px;
+
+  @include vp-767 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 .promo__wrapper {
   display: grid;
   grid-template-columns: calc(500 / 1160 * 100%) calc(660 / 1160 * 100%);

@@ -43,9 +43,12 @@
 
 
 .footer__list {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 40px;
+  row-gap: 11px;
+  // flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -98,6 +101,7 @@
 }
 
 .footer__social-list {
+  max-width: 100px;
   display: flex;
   gap: 11px;
   flex-wrap: wrap;

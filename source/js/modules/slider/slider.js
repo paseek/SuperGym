@@ -9,10 +9,18 @@ const initTrainersSlider = () => {
       new Swiper('.trainers__swiper', {
         direction: 'horizontal',
         loop: true,
+        loopedSlides: 0,
+        loopFillGroupWithBlank: true,
+        watchSlidesProgress: true,
+        observer: true,
 
         navigation: {
           nextEl: '.trainers__button--next',
           prevEl: '.trainers__button--prev',
+        },
+
+        keyboard: {
+          enabled: true,
         },
 
         breakpoints: {
@@ -28,6 +36,27 @@ const initTrainersSlider = () => {
             spaceBetween: 40,
           },
         },
+
+        on: {
+          init() {
+            const duplicateElements = trainersSwiper.querySelectorAll('.swiper-slide-duplicate');
+            duplicateElements.forEach((item) => {
+              item.setAttribute('tabindex', '-1');
+            });
+          },
+
+          slideChange() {
+            trainersSwiper.querySelectorAll('.swiper-slide').forEach((item) => {
+              item.setAttribute('tabindex', '-1');
+            });
+
+            let activeSlides = trainersSwiper.querySelectorAll('.swiper-slide-visible');
+            activeSlides.forEach((item) => {
+              item.setAttribute('tabindex', '0');
+            });
+          },
+        },
+
       })
     )();
   }

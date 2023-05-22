@@ -144,7 +144,9 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, calc(360 / 1160 * 100%));
-  gap: calc(40 / 1160 * 100%);
+  // grid-template-columns: repeat(3, 1fr);
+  // gap: calc(40 / 1160 * 100%);
+  gap: 40px;
   // justify-items: center;
   list-style-type: none;
   padding: 0;
@@ -310,10 +312,10 @@
 .subs__background-image {
   position: absolute;
   right: 0;
-  bottom: -18%;
+  bottom: -150px;
 
   @include vp-1199 {
-    bottom: -7%;
+    bottom: -124px;
   }
 
   @include vp-767 {

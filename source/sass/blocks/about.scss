@@ -147,8 +147,11 @@
 }
 
 .about__video {
-  width: 364px;
-  height: 228px;
+  // width: 364px;
+  width: calc(364px / 1160px * 100%);
+  height: auto;
+  aspect-ratio: 364/228;
+  // height: 228px;
   position: absolute;
   top: 408px;
   left: 50%;
@@ -156,8 +159,11 @@
   background-color: $dark-gray;
 
   @include vp-1199 {
-    width: 266px;
-    height: 167px;
+    // width: 266px;
+    width: calc(266px / 678px * 100%);
+    height: auto;
+    aspect-ratio: 266/167;
+    // height: 167px;
     top: auto;
     bottom: 17px;
     transform: translateX(-50%);

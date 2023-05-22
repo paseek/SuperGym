@@ -4,7 +4,7 @@
 
   @include vp-1199 {
     padding-top: 48px;
-    padding-bottom: 100px;
+    padding-bottom: 101px;
   }
 
   @include vp-767 {
@@ -15,7 +15,12 @@
 
 .trainers__slider {
   @include vp-1199 {
-    max-width: 566px;
+    // max-width: 566px;
+    max-width: 83%;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
   }
 }
 
@@ -87,17 +92,27 @@
 
 .trainers__item {
   display: grid;
-  max-width: 260px;
-  max-height: none;
-  height: auto;
-  aspect-ratio: 1/1;
+  // max-width: 260px;
+  width: calc(260 / 1160 * 100%);
+  aspect-ratio: 260/294;
+  // max-height: none;
+  // height: auto;
+  // aspect-ratio: 1/1;
 
   @include vp-1199 {
-    max-width: 268px;
+    // max-width: 268px;
+    aspect-ratio: 268/294;
   }
 
   @include vp-767 {
-    max-width: 100%;
+    // max-width: 100%;
+    aspect-ratio: 226/274;
+  }
+}
+
+.trainers__item {
+  @include focus {
+    border: 1px solid red;
   }
 }
 
