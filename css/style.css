@@ -4633,10 +4633,13 @@ button,
     line-height: 47px;
     margin-top: -2px;
     margin-left: 6px;
+    text-align: start;
   }
 
   .promo__text-intro dl {
     margin-right: 1px;
+    -ms-grid-column-align: end;
+    justify-self: end;
   }
 
   .promo__text p {
