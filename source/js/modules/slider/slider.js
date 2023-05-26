@@ -9,6 +9,7 @@ const initTrainersSlider = () => {
       new Swiper('.trainers__swiper', {
         direction: 'horizontal',
         loop: true,
+        slidesPerView: 1,
         loopedSlides: 0,
         loopFillGroupWithBlank: true,
         watchSlidesProgress: true,
