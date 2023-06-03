@@ -7,7 +7,7 @@
 <details>
 <summary>Итоги</summary>
   
-<i><a href="https://docs.google.com/spreadsheets/d/1Q1j3cO-mVtxiVXXoigtRa7MxF1rPhbNSGHhpINl6gr4/edit#gid=1031935164">Карточка проекта</a></i>
+<i><a href="https://docs.google.com/spreadsheets/d/1Q1j3cO-mVtxiVXXoigtRa7MxF1rPhbNSGHhpINl6gr4/edit?usp=sharing">Карточка проекта</a></i>
   
 | Критерий | Результат |
 |:-----|:-----------|
